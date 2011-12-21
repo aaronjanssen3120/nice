@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A2A14C0F-5377-4673-AD12-6FB4092C122E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Seismic</RootNamespace>
+    <AssemblyName>Seismic</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DlmIO, Version=2.0.5.0, Culture=neutral, PublicKeyToken=b1f04c18ec875148, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\Sho 2.0 for .NET 4\bin\DlmIO.dll</HintPath>
+    </Reference>
+    <Reference Include="EmbeddedSho, Version=2.0.5.27, Culture=neutral, PublicKeyToken=314a316d4cfb815d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\Sho 2.0 for .NET 4\bin\EmbeddedSho.dll</HintPath>
+    </Reference>
+    <Reference Include="MathFunc, Version=2.0.5.0, Culture=neutral, PublicKeyToken=af39242306d6159d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\Sho 2.0 for .NET 4\bin\MathFunc.dll</HintPath>
+    </Reference>
+    <Reference Include="MatrixInterf, Version=2.0.5.0, Culture=neutral, PublicKeyToken=1fa71b5ffec10e32, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\Sho 2.0 for .NET 4\bin\MatrixInterf.dll</HintPath>
+    </Reference>
+    <Reference Include="PythonExt, Version=2.0.5.27, Culture=neutral, PublicKeyToken=f5389a9189cccc85, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\Sho 2.0 for .NET 4\bin\PythonExt.dll</HintPath>
+    </Reference>
+    <Reference Include="Rand, Version=2.0.5.0, Culture=neutral, PublicKeyToken=af26ffbb175a1abe, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\Sho 2.0 for .NET 4\bin\Rand.dll</HintPath>
+    </Reference>
+    <Reference Include="ShoArray, Version=2.0.5.0, Culture=neutral, PublicKeyToken=1635376d5e62ab5f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\Sho 2.0 for .NET 4\bin\ShoArray.dll</HintPath>
+    </Reference>
+    <Reference Include="ShoDB, Version=2.0.5.0, Culture=neutral, PublicKeyToken=44bfc57d893eaf85, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\Sho 2.0 for .NET 4\bin\ShoDB.dll</HintPath>
+    </Reference>
+    <Reference Include="ShoPickleHelper, Version=2.0.5.27, Culture=neutral, PublicKeyToken=bfb3ad4f5710911f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\Sho 2.0 for .NET 4\bin\ShoPickleHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="ShoViz, Version=2.0.5.0, Culture=neutral, PublicKeyToken=14eb30934789ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\Sho 2.0 for .NET 4\bin\ShoViz.dll</HintPath>
+    </Reference>
+    <Reference Include="SignalProc">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\Sho 2.0 for .NET 4\packages\SignalProc\SignalProc.dll</HintPath>
+    </Reference>
+    <Reference Include="Stats">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\Sho 2.0 for .NET 4\packages\Stats\Stats.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="utils, Version=2.0.5.0, Culture=neutral, PublicKeyToken=f71603a15f22664a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\Sho 2.0 for .NET 4\bin\utils.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
