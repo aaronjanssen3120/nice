@@ -27,7 +27,7 @@ namespace Seismic
         // Instance Constructor.
         public MyCustomClass()
         {
-            Number = 0;
+            Number   = 0;
         }
     }
     // Another class definition. This one contains
